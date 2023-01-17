@@ -87,15 +87,10 @@ nav a {
       } else {
         document.getElementById("fishcoin-button").style.display = "none";
       }
-    }
-
-    function toggleImage() {
-      // Show/hide the image
-      var image = document.getElementById("fishcoin-image");
-      if (image.style.display === "none") {
-        image.style.display = "block";
+      if (value >50) {
+        document.getElementById("fishcoin-value").innerHTML = "£" + value + "⬆";
       } else {
-        image.style.display = "none";
+        document.getElementById("fishcoin-value").innerHTML = "£" + value + "⬇";
       }
     }
 
