@@ -77,7 +77,7 @@ nav a {
   <script>
     function updateFishcoinValue() {
       // Generate a random number between 1 and 100
-      var value = 100 ;
+      var value = Math.floor(Math.random() * 100) + 1 ;
       // Update the text on the page with the new value
       document.getElementById("fishcoin-value").innerHTML = "£" + value;
 
