@@ -73,11 +73,11 @@ nav a {
   cursor: pointer;
 }
 
-  </style>
+    </style>
   <script>
     function updateFishcoinValue() {
       // Generate a random number between 1 and 100
-      var value = Math.floor(Math.random() * 100) + 1;
+      var value = 100 ;
       // Update the text on the page with the new value
       document.getElementById("fishcoin-value").innerHTML = "£" + value;
 
@@ -91,6 +91,16 @@ nav a {
         document.getElementById("fishcoin-value").innerHTML = "£" + value + "⬆";
       } else {
         document.getElementById("fishcoin-value").innerHTML = "£" + value + "⬇";
+      }
+    }
+
+    function toggleImage() {
+      // Show/hide the image
+      var image = document.getElementById("fishcoin-image");
+      if (image.style.display === "none") {
+        image.style.display = "block";
+      } else {
+        image.style.display = "none";
       }
     }
 
